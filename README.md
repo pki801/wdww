@@ -1,16 +1,42 @@
-# React + Vite
+# 🍿 What Do We Watch?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web app that helps groups with different tastes find a movie or TV show everyone will enjoy — powered by AI.
 
-Currently, two official plugins are available:
+## The problem
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+When people with different tastes want to watch something together, picking what to watch can take forever. This app solves that by letting everyone enter their preferences, then using AI to find a recommendation that works for the whole group.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Add any number of people, each with their own taste/mood input
+- AI-powered recommendations (Claude API) tailored to the group
+- Movie posters, ratings, and streaming availability (TMDB API)
+- Filter by movies only, TV shows only, or both
+- Shuffle for new recommendations (avoids repeats)
+- Supports 7 languages: English, Korean, Spanish, Japanese, French, Chinese, German
+- Fully responsive design
 
-## Expanding the ESLint configuration
+## Tech stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React + Vite
+- **Styling:** Tailwind CSS
+- **AI:** Claude API (Anthropic)
+- **Movie data:** TMDB API
+
+## Live demo
+
+https://wdww-omega.vercel.app
+
+## Running locally
+
+\`\`\`bash
+npm install
+npm run dev
+\`\`\`
+
+You'll need API keys for Claude and TMDB in a \`.env\` file:
+
+\`\`\`
+VITE_ANTHROPIC_API_KEY=your_key_here
+VITE_TMDB_API_KEY=your_key_here
+\`\`\`
