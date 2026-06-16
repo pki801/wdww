@@ -29,14 +29,14 @@ https://wdww-omega.vercel.app
 
 ## Running locally
 
-\`\`\`bash
+```bash
 npm install
 npm run dev
-\`\`\`
+```
 
-You'll need API keys for Claude and TMDB in a \`.env\` file:
+You'll need API keys for Claude and TMDB in a `.env` file:
 
-\`\`\`
+```
 VITE_ANTHROPIC_API_KEY=your_key_here
 VITE_TMDB_API_KEY=your_key_here
-\`\`\`
+```
