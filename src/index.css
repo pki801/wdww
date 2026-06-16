@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: revert;
+  font-weight: revert;
+}
+
+@theme {
+  --color-cream: #FAF7F2;
+  --color-warm-orange: #E8845C;
+  --color-brown: #3D2C2C;
+  --color-card: #FFFFFF;
+}
+
+body {
+  background-color: #FAF7F2;
+  color: #3D2C2C;
+  font-family: system-ui, sans-serif;
+}
+
+#root {
+  width: 100%;
+}
+
+button, a {
+  cursor: pointer;
+}
