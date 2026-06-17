@@ -10,7 +10,8 @@ When people with different tastes want to watch something together, picking what
 
 - Add any number of people, each with their own taste/mood input
 - AI-powered recommendations (Claude API) tailored to the group
-- Movie posters, ratings, and streaming availability (TMDB API)
+- Movie posters, ratings, and short AI-written summaries
+- Streaming availability icons (Netflix, Prime Video, etc.)
 - Filter by movies only, TV shows only, or both
 - Shuffle for new recommendations (avoids repeats)
 - Supports 7 languages: English, Korean, Spanish, Japanese, French, Chinese, German

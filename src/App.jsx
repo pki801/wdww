@@ -3,6 +3,7 @@ import LoadingScreen from "./components/LoadingScreen";
 import LanguageSelector from "./components/LanguageSelector";
 import { useState } from "react";
 import { searchMovie, getWatchProviders } from "./api/tmdb";
+import wdwwLogo from "./assets/wdww-logo.png";
 
 const translations = {
   English: {
@@ -266,10 +267,21 @@ function App() {
 
   return (
     <div
-      className="min-h-screen pt-4 pb-6 px-4"
+      className="min-h-screen pt-4 pb-8 px-4"
       style={{ backgroundColor: "#FAF7F2" }}
     >
-      <div className="flex justify-end mb-6 sm:mb-1">
+      <div className="flex justify-between items-center mb-6 sm:mb-1">
+        <div className="flex items-center gap-2">
+          <img
+            src="/icon-192.png"
+            alt="WDWW"
+            style={{ width: "32px", height: "32px" }}
+            className="rounded-md"
+          />
+          <span className="font-semibold" style={{ color: "#3D2C2C" }}>
+            wdww
+          </span>
+        </div>
         <LanguageSelector
           language={language}
           onChange={(newLang) => {
@@ -283,6 +295,13 @@ function App() {
             setAttemptedSubmit(false);
             setFilter("All");
           }}
+        />
+      </div>
+      <div className="flex justify-center mb-4">
+        <img
+          src={wdwwLogo}
+          alt="WDWW"
+          style={{ width: "120px", height: "120px" }}
         />
       </div>
       <div className="max-w-2xl mx-auto">
